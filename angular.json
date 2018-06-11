@@ -50,7 +50,9 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "singlepage:build"
+            "browserTarget": "singlepage:build",
+             "port": 4300,
+               "host": "localhost"
           },
           "configurations": {
             "production": {
@@ -81,6 +83,8 @@
             ]
           }
         },
+            
+  
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -115,6 +119,7 @@
             ]
           }
         }
+        
       }
     }
   },
